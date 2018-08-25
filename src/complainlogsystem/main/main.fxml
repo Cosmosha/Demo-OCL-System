@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="678.0" stylesheets="@../../fieldValidation/StyleValidation.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complainlogsystem.main.MainController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit ">
+                  <items>
+                    <MenuItem fx:id="ipAddress" mnemonicParsing="false" onAction="#ipAddress" text="IP Address" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <right>
+            <VBox prefHeight="485.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button id="jfx-button" fx:id="addHODButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#addHOD" prefHeight="150.0" prefWidth="150.0" styleClass="jfx-button" text="Add HOD">
+                     <graphic>
+                        <ImageView fx:id="addHoDButton" fitHeight="27.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/worker.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                     <stylesheets>
+                        <URL value="@main.css" />
+                        <URL value="@main.css" />
+                     </stylesheets>
+                  </Button>
+                  <Button id="jfx-button" fx:id="addDeprtButton" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#addDepartment" prefHeight="150.0" prefWidth="150.0" styleClass="jfx-button" text="Add Department">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/department.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                     <stylesheets>
+                        <URL value="@main.css" />
+                        <URL value="@main.css" />
+                     </stylesheets>
+                  </Button>
+                  <Button id="jfx-button" fx:id="HODListButton" contentDisplay="TOP" layoutX="10.0" layoutY="93.0" mnemonicParsing="false" onAction="#addHODList" prefHeight="150.0" prefWidth="150.0" styleClass="jfx-button" text="HOD List">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/list.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                     <stylesheets>
+                        <URL value="@main.css" />
+                        <URL value="@main.css" />
+                     </stylesheets>
+                  </Button>
+                  <Button id="jfx-button" fx:id="LoggedListButton" contentDisplay="TOP" layoutX="10.0" layoutY="93.0" mnemonicParsing="false" onAction="#LoggedList" prefHeight="150.0" prefWidth="150.0" styleClass="jfx-button" text="Logged List">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logged.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                     <stylesheets>
+                        <URL value="@main.css" />
+                        <URL value="@main.css" />
+                     </stylesheets>
+                  </Button>
+                  <Button id="jfx-button" fx:id="ComplainFormButton" contentDisplay="TOP" layoutX="10.0" layoutY="176.0" mnemonicParsing="false" onAction="#complainForm" prefHeight="150.0" prefWidth="150.0" styleClass="jfx-button" text="Complain Form">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/complain.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                     <stylesheets>
+                        <URL value="@main.css" />
+                        <URL value="@main.css" />
+                     </stylesheets>
+                  </Button>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab style="-fx-background-color: #1B5E20;" text="Department">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableview" editable="true" prefHeight="456.0" prefWidth="528.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="dprtIDCol" prefWidth="75.0" text="Department ID" />
+                                  <TableColumn fx:id="dprtNameCol" prefWidth="75.0" text="Department Name" />
+                                    <TableColumn fx:id="locationCol" prefWidth="75.0" text="Location" />
+                                </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab id="jfx-button" style="-fx-background-color: #1B5E20;" text="Update/Rename">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="65.0" layoutY="14.0" prefHeight="456.0" prefWidth="528.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox prefHeight="62.0" prefWidth="528.0">
+                                       <children>
+                                          <TextField fx:id="searchTxt" prefHeight="27.0" prefWidth="149.0" promptText="Search">
+                                             <HBox.margin>
+                                                <Insets left="250.0" right="10.0" top="20.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <Button id="jfx-button" fx:id="searchButton" mnemonicParsing="false" onAction="#searchButton" prefHeight="11.0" prefWidth="44.0" styleClass="jfx-button" stylesheets="@main.css">
+                                             <graphic>
+                                                <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../images/search.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <HBox.margin>
+                                                <Insets top="20.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <TextField fx:id="membTxt" editable="false" promptText="Member ID">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="90.0" right="90.0" top="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="nameTxt" layoutX="100.0" layoutY="82.0" promptText="Name">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="90.0" right="90.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <ComboBox fx:id="DepartCb" editable="true" prefHeight="25.0" prefWidth="439.0" promptText="Department">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="90.0" right="90.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <ComboBox fx:id="statusCb" editable="true" layoutX="100.0" layoutY="152.0" prefHeight="25.0" prefWidth="439.0" promptText="Status">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="90.0" right="90.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                    <TextField fx:id="usernameTxt" promptText="Username">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="90.0" right="90.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <PasswordField fx:id="passwordTxt" prefHeight="25.0" prefWidth="440.0" promptText="password">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="90.0" right="90.0" />
+                                       </VBox.margin>
+                                    </PasswordField>
+                                    <TextField fx:id="phoneTxt" layoutX="100.0" layoutY="257.0" promptText="Phone">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="90.0" right="90.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <HBox layoutX="10.0" layoutY="30.0" prefHeight="81.0" prefWidth="528.0">
+                                       <children>
+                                          <Button id="jfx-button" fx:id="updateButton" mnemonicParsing="false" onAction="#updateButton" prefHeight="65.0" prefWidth="185.0" styleClass="jfx-button" stylesheets="@main.css" text="Update">
+                                             <HBox.margin>
+                                                <Insets left="70.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button id="jfx-button" fx:id="clearButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#clearButton" prefHeight="65.0" prefWidth="185.0" styleClass="jfx-button" stylesheets="@main.css" text="Clear">
+                                             <HBox.margin>
+                                                <Insets left="20.0" right="20.0" top="20.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

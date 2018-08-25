@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="370.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complainlogsystem.addHOD.AddHODController">
+    <stylesheets>
+        <URL value="@addhod.css" />
+      <URL value="@../../fieldValidation/StyleValidation.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="14.0" layoutY="28.0" prefHeight="434.0" prefWidth="367.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TitledPane animated="false" prefHeight="59.0" prefWidth="345.0" text="Head Of Department">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="29.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill the form below to add Head of Department" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <JFXTextField fx:id="staffIDTxt" labelFloat="true" promptText=" Staff ID">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="nameTxt" labelFloat="true" layoutX="30.0" layoutY="89.0" promptText="Full Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXComboBox fx:id="DeprtCbx" labelFloat="true" prefHeight="25.0" prefWidth="344.0" promptText="Department">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </JFXComboBox>
+            <JFXComboBox fx:id="DesignCbx" labelFloat="true" layoutX="30.0" layoutY="179.0" prefHeight="25.0" prefWidth="344.0" promptText="Designation">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </JFXComboBox>
+            <JFXTextField fx:id="userNameTxt" labelFloat="true" promptText="Username">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordTxt" promptText="Password">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXTextField fx:id="phoneTxt" labelFloat="true" layoutX="30.0" layoutY="299.0" promptText="Phone">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox prefHeight="74.0" prefWidth="370.0">
+               <children>
+                  <JFXButton fx:id="addButton" onAction="#AddButton" prefHeight="70.0" prefWidth="201.0" text="Add" />
+                  <JFXButton fx:id="clearButton" onAction="#ClearButton" prefHeight="70.0" prefWidth="201.0" stylesheets="@addhod.css" text="Clear" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

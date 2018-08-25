@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="624.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complainlogsystem.HODList.HODListController">
+    <stylesheets>
+        <URL value="@hodlist.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableview" layoutX="227.0" layoutY="71.0" prefHeight="417.0" prefWidth="564.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="memCol" prefWidth="75.0" text="Member ID" />
+          <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="deprtCol" prefWidth="75.0" text="Department" />
+            <TableColumn fx:id="phoneCol" prefWidth="75.0" text="Phone" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

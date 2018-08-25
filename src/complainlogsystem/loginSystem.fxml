@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complainlogsystem.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="536.0" prefWidth="366.0" style="-fx-background-color: #1B5E20;">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="138.0" layoutX="115.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Museum.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="73.0" layoutY="333.0" opacity="0.4" prefWidth="200.0" />
+            <Separator layoutX="116.0" layoutY="344.0" opacity="0.4" prefWidth="200.0" />
+            <Separator layoutX="73.0" layoutY="355.0" opacity="0.4" prefWidth="200.0" />
+            <Text fill="#b5b5b5" layoutX="116.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   Powerful Thinking &#10;Great Beautiful Future&#10;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text fill="#e4dede" layoutX="52.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KUMASI TECHNICAL UNIVERSITY">
+               <font>
+                  <Font name="Bodoni MT Black" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="366.0" prefHeight="536.0" prefWidth="356.0">
+         <children>
+            <JFXButton fx:id="loginButton" layoutX="104.0" layoutY="372.0" onAction="#loginButton" prefHeight="44.0" prefWidth="149.0" stylesheets="@login.css" text="Login" />
+            <JFXTextField fx:id="usernameTxtBox" labelFloat="true" layoutX="92.0" layoutY="268.0" prefHeight="25.0" prefWidth="173.0" promptText="Username" />
+            <ImageView layoutX="130.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Login.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="passwordTxtBox" labelFloat="true" layoutX="92.0" layoutY="310.0" prefHeight="25.0" prefWidth="173.0" promptText="Password" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

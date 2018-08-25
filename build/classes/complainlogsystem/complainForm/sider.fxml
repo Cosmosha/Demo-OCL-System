@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="191.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complainlogsystem.complainForm.SiderController">
+   <children>
+      <Pane prefHeight="201.0" prefWidth="191.0">
+         <children>
+            <ImageView fitHeight="169.0" fitWidth="191.0" layoutX="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/kstu.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="      Kumasi Technical University">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Text>
+      <JFXButton id="jfx-button" fx:id="sentLogButton" accessibleText="sentLog" prefHeight="120.0" prefWidth="304.0" styleClass="jfx-button" stylesheets="@complainform.css" text="Sent Log">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton id="jfx-button" fx:id="loginButton" accessibleText="Login" prefHeight="120.0" prefWidth="304.0" styleClass="jfx-button" stylesheets="@complainform.css" text="Login">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton id="jfx-button" fx:id="exitButton" accessibleText="Exit" prefHeight="120.0" prefWidth="304.0" styleClass="jfx-button" stylesheets="@complainform.css" text="Exit">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </JFXButton>
+   </children>
+</VBox>
