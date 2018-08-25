@@ -1,0 +1,6 @@
+1. Install and launch xampp server on the computer.
+2. On the Xampp Control Panel look for Apache and click Config 
+3. Open any Broswer and enter 127.0.0.1 in the search bar to open xampp server.
+4. Select PhpMyAdmin to open phpMyAdmin Database server.
+5. Under the Server 127.0.0.1 select import. 
+6. Click on the Choose File and select complainlog.sql from the setup folder.
